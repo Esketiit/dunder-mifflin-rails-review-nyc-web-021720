@@ -1,0 +1,5 @@
+<h1><%=  @dog.name %></h1>
+
+<%= dog.name %><br>
+<%= dog.likes %><br>
+<%= button_to "+1 Like", {:controller => :dogs, :action => 'increment_like', :id => @dog.id }, method: :patch %>
